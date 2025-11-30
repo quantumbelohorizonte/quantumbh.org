@@ -6,11 +6,11 @@ O Quantum BH é um grupo de estudos em computação quântica criado pelos estud
 Em 2025, apresentamos uma palestra introdutória sobre Computação Quântica no evento Inforuso 2025, e seguimos ampliando nossas ações para tornar esse campo acessível à comunidade acadêmica e tecnológica de Belo Horizonte e do Brasil.
 
 <div align="center">
-  <a href="/#sobre-o-quantum-bh-sobre-o-quantum-bh"><img src="https://img.shields.io/badge/Sobre_o_quantum_bh-17222D" alt="Sobre o grupo"></a>
-  <a href="/#linhas-de-estudo-e-temas-centrais"><img src="https://img.shields.io/badge/O_que_estudamos-17222D" alt="O que estudamos"></a>
-  <a href="/#atividades-e-eventos"><img src="https://img.shields.io/badge/O_que_fazemos-17222D" alt="O que fazemos"></a>
-  <a href="/#materiais-did%C3%A1ticos-e-aulas"><img src="https://img.shields.io/badge/Materiais_e_aulas-17222D" alt="Materiais e aulas"></a>
-  <a href="/#como-participar"><img src="https://img.shields.io/badge/Como_participar-17222D" alt="Como participar"></a>
+  <a href="/#sobre-o-quantum-bh-sobre-o-quantum-bh"><img src="https://img.shields.io/badge/Sobre_o_quantum_bh-17222D" alt="Sobre o grupo"></a>ㅤㅤ
+  <a href="/#linhas-de-estudo-e-temas-centrais"><img src="https://img.shields.io/badge/O_que_estudamos-17222D" alt="O que estudamos"></a>ㅤㅤ
+  <a href="/#atividades-e-eventos"><img src="https://img.shields.io/badge/O_que_fazemos-17222D" alt="O que fazemos"></a>ㅤㅤ
+  <a href="/#materiais-did%C3%A1ticos-e-aulas"><img src="https://img.shields.io/badge/Materiais_e_aulas-17222D" alt="Materiais e aulas"></a>ㅤㅤ
+  <a href="/#como-participar"><img src="https://img.shields.io/badge/Como_participar-17222D" alt="Como participar"></a>ㅤㅤ
   <a href="/#contato-e-parcerias"><img src="https://img.shields.io/badge/Contato_e_parcerias-17222D" alt="Contato e parcerias"></a>
 </div>
 
@@ -107,22 +107,22 @@ As informações atualizadas sobre datas de reuniões, links de acesso e novidad
 ### Contato e parcerias
 
 Estamos abertos a parcerias com:
-- grupos de pesquisa,
-- centros acadêmicos,
-- cursos de graduação e pós-graduação,
-- empresas e comunidades de tecnologia interessadas em computação quântica.
+- Grupos de pesquisa,
+- Centros acadêmicos,
+- Cursos de graduação e pós-graduação,
+- Empresas e comunidades de tecnologia interessadas em computação quântica.
 
 Se você deseja:
-- convidar o Quantum BH para uma palestra ou oficina;
-- propor um projeto conjunto;
-- apoiar a divulgação da computação quântica em sua instituição,
+- Convidar o Quantum BH para uma palestra ou oficina;
+- Propor um projeto conjunto;
+- Apoiar a divulgação da computação quântica em sua instituição,
 
 Entre em contato conosco:
 
-E-mail do grupo: (inserir e-mail quando definirem)
-
-GitHub: página e repositórios oficiais do Quantum BH (este site)
-
-(Opcional) Redes sociais: (inserir links quando forem criadas)
+<div align="center">
+  <a href="mailto:quantumbelohorizonte@gmail.com"><img src="https://img.shields.io/badge/­-Email-EA4335?logo=gmail" alt="E-mail"></a>ㅤㅤ
+  <a href="https://github.com/quantumbelohorizonte"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github" alt="GitHub"></a>ㅤㅤ
+  <a href="https://github.com/quantumbelohorizonte"><img src="https://img.shields.io/badge/-YouTube-FF0000?logo=youtube" alt="YouTube"></a>
+</div>
 
 Nosso objetivo é construir uma comunidade colaborativa que ajude a formar a próxima geração de profissionais e pesquisadores em computação quântica, conectando Belo Horizonte ao cenário nacional e internacional da área.
