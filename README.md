@@ -8,10 +8,10 @@ Em 2025, apresentamos uma palestra introdutória sobre Computação Quântica no
 <div align="center">
   <a href="/#sobre-o-quantum-bh-sobre-o-quantum-bh"><img src="https://img.shields.io/badge/Sobre_o_quantum_bh-17222D" alt="Sobre o grupo"></a>
   <a href="/#linhas-de-estudo-e-temas-centrais"><img src="https://img.shields.io/badge/O_que_estudamos-17222D" alt="O que estudamos"></a>
-  <a href="/#atividades-e-eventos"><img src="https://img.shields.io/badge/O_que_estudamos-17222D" alt="Materiais e aulas"></a>
-  <a href="/#materiais-did%C3%A1ticos-e-aulas"><img src="https://img.shields.io/badge/Materiais_e_aulas-17222D" alt="O que estudamos"></a>
-  <a href="/#como-participar"><img src="https://img.shields.io/badge/Como_participar-17222D" alt="O que estudamos"></a>
-  <a href="/#contato-e-parcerias"><img src="https://img.shields.io/badge/Contato_e_parcerias-17222D" alt="O que estudamos"></a>
+  <a href="/#atividades-e-eventos"><img src="https://img.shields.io/badge/O_que_fazemos-17222D" alt="O que fazemos"></a>
+  <a href="/#materiais-did%C3%A1ticos-e-aulas"><img src="https://img.shields.io/badge/Materiais_e_aulas-17222D" alt="Materiais e aulas"></a>
+  <a href="/#como-participar"><img src="https://img.shields.io/badge/Como_participar-17222D" alt="Como participar"></a>
+  <a href="/#contato-e-parcerias"><img src="https://img.shields.io/badge/Contato_e_parcerias-17222D" alt="Contato e parcerias"></a>
 </div>
 
 ### Sobre o Quantum BH
