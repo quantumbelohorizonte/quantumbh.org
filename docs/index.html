@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quantum BH – Grupo de Estudos em Computação Quântica</title>
+  <meta name="description" content="Formação, pesquisa e divulgação em computação quântica em Belo Horizonte. Grupo de estudos Quantum BH – Faculdade Cotemig.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Paleta de cores */
+      --c-bg: #FFFFFF;
+      --c-bg-alt: #EFF4F9;
+      --c-bg-light: #CCDDEE;
+      --c-main: #17222D;
+      --c-main-alt: #445566;
+      --c-main-contrast: #FFC800;
+      --c-blue1: #99D4FF;
+      --c-blue2: #4499FF;
+      --c-blue3: #1155FF;
+      --c-gray1: #0D1114;
+      --c-gray2: #667788;
+      --c-gray3: #99AABB;
+      --c-yellow: #FFE900;
+      --c-orange: #F29900;
+      --c-yellow-deep: #FFC800;
+      --c-orange2: #F29900;
+      --c-orange3: #FFE900;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      background: var(--c-bg);
+      color: var(--c-main);
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    header {
+      background: var(--c-main);
+      color: var(--c-main-contrast);
+      padding: 32px 0 20px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+    }
+    header p {
+      margin: 6px 0 0 0;
+      color: var(--c-bg-alt);
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 22px 0 16px;
+    }
+    nav a {
+      display: inline-block;
+      padding: 0.7em 1em;
+      border-radius: 22px;
+      background: var(--c-main-contrast);
+      color: var(--c-main);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      transition: background .15s, color .15s, box-shadow .15s;
+      box-shadow: 0 1px 5px 0 #ccddee38;
+    }
+    nav a:hover,
+    nav a:focus {
+      background: var(--c-blue3);
+      color: var(--c-bg);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--c-bg);
+      border-radius: 16px;
+      box-shadow: 0 2px 20px 0 #ccddee15;
+      padding: 32px 18px 52px 18px;
+    }
+    section {
+      margin: 42px 0 0 0;
+      position: relative;
+    }
+    section:first-of-type {
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-top: 0;
+      color: var(--c-main);
+      border-left: 7px solid var(--c-main-contrast);
+      padding-left: 13px;
+      background: linear-gradient(90deg, var(--c-main-contrast) 0px, transparent 90%);
+      margin-bottom: 18px;
+    }
+    h3 {
+      color: var(--c-blue3);
+      font-size: 1.23rem;
+      font-weight: 700;
+      margin-top: 37px;
+      margin-bottom: 8px;
+      letter-spacing: .01em;
+    }
+    h4 {
+      color: var(--c-main-alt);
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin-top: 26px;
+      margin-bottom: 2px;
+      letter-spacing: .01em;
+    }
+    ul, ol {
+      padding-left: 1.35em;
+      margin: 0.5em 0 1.1em;
+    }
+    li {
+      margin-bottom: 0.3em;
+    }
+    blockquote {
+      background: var(--c-bg-light);
+      border-left: 5px solid var(--c-main-contrast);
+      margin: 1.5em 0;
+      padding: 0.75em 1.25em;
+      border-radius: 9px;
+      color: var(--c-gray2);
+      font-style: italic;
+    }
+    a, a:link {
+      color: var(--c-blue3);
+      text-decoration: underline;
+      cursor: pointer;
+      transition: color 0.13s;
+    }
+    a:hover {
+      color: var(--c-orange);
+      text-decoration: underline;
+    }
+    .btn-group {
+      margin: 2.5em 0 2em;
+      text-align: center;
+    }
+    .btn-contact {
+      background: var(--c-main-contrast);
+      color: var(--c-main);
+      border: none;
+      padding: 0.65em 1.4em;
+      border-radius: 28px;
+      font-size: 1.04rem;
+      font-weight: 700;
+      margin: 0 0.75em 0.8em 0.75em;
+      cursor: pointer;
+      box-shadow: 0 2px 8px 0 #ccddee45;
+      transition: background .15s, color .15s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-contact:hover,
+    .btn-contact:focus {
+      background: var(--c-blue3);
+      color: var(--c-bg);
+      text-decoration: none;
+    }
+    .card-list {
+      margin: 30px 0 0 0;
+      display: grid;
+      gap: 1.6rem;
+    }
+    @media (min-width: 650px) {
+      .card-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .card {
+      background: var(--c-bg-alt);
+      padding: 1.2em 1.2em 0.9em 1.2em;
+      border-radius: 12px;
+      border-left: 5px solid var(--c-main-contrast);
+      box-shadow: 0 0.5px 3px #ccddee38;
+      min-width: 0;
+      margin: 0;
+    }
+    .card h4 {
+      margin: 0 0 0.3em 0;
+      color: var(--c-main-alt);
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .badges a img {
+      height: 32px;
+    }
+    footer {
+      background: var(--c-main);
+      color: var(--c-bg);
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 32px;
+      padding: 24px 10px 18px;
+    }
+    /* Destacar principais */
+    .highlight {
+      color: var(--c-main-contrast);
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--c-main-contrast) 18%, transparent 80%);
+      border-radius: 3px;
+      padding: 0 5px;
+      box-decoration-break: clone;
+    }
+    /* Paleta para outros apoios visuais, se quiser destacar boxes aplicar style extra */
+    .info-box {
+      background: var(--c-bg-light);
+      color: var(--c-main-alt);
+      padding: 1em 1.3em;
+      border-radius: 10px;
+      border-left: 5px solid var(--c-main-contrast);
+      margin: 1.2em 0;
+    }
+    /* Scroll anchor fix header offset */
+    [id] {
+      scroll-margin-top: 110px;
+    }
+    @media (max-width: 680px) {
+      main {padding: 19px 4vw 35px 4vw;}
+      nav a {font-size: 0.98rem;}
+      h1 {font-size:1.6rem;}
+      h2 {font-size:1.24rem;}
+      h3 {font-size: 1.08rem;}
+      .card-list {grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quantum BH – Grupo de Estudos em Computação Quântica</h1>
+    <p>Formação, pesquisa e divulgação em computação quântica em Belo Horizonte</p>
+    <nav>
+      <a href="#sobre-o-quantum-bh">Sobre o grupo</a>
+      <a href="#linhas-de-estudo-e-temas-centrais">O que estudamos</a>
+      <a href="#atividades-e-eventos">O que fazemos</a>
+      <a href="#materiais-didaticos-e-aulas">Materiais e aulas</a>
+      <a href="#como-participar">Como participar</a>
+      <a href="#contato-e-parcerias">Contato e parcerias</a>
+    </nav>
+  </header>
+  <main>
+    <section id="sobre-o-quantum-bh">
+      <h2>Sobre o Quantum BH</h2>
+      <p>
+        O <span class="highlight">Quantum BH</span> nasceu como uma iniciativa estudantil na Faculdade Cotemig, quando os alunos de Ciência da Computação <b>Felipe Vandevelde</b> e <b>Ramonys Santos</b> decidiram organizar um grupo de estudos dedicado à computação quântica.<br><br>
+        A proposta inicial era simples e ambiciosa ao mesmo tempo: criar um espaço permanente para aprender, discutir e experimentar conceitos de informação e computação quântica a partir de uma base sólida em ciência da computação.
+      </p>
+      <p>
+        O grupo passou a contar com o apoio do <b>Prof. Dr. Júlio Cesar da Silva</b> e do <b>Prof. Dr. André T. Cesário</b>, que contribuíram com orientação acadêmica, estrutura de estudo e produção de videoaulas introduzindo os fundamentos da mecânica quântica e da computação quântica.
+      </p>
+      <p>
+        Desde então, o <b>Quantum BH</b> vem se consolidando como um ponto de encontro para estudantes, pesquisadores e entusiastas interessados em entender como <b>qubits</b>, <b>circuitos quânticos</b> e algoritmos como <b>Grover</b> e <b>Shor</b> podem transformar a computação e a tecnologia da informação.
+      </p>
+      <blockquote>Em 2025, apresentamos uma palestra introdutória sobre Computação Quântica no evento Inforuso 2025, e seguimos ampliando nossas ações para tornar esse campo acessível à comunidade acadêmica e tecnológica de Belo Horizonte e do Brasil.</blockquote>
+    </section>
+
+    <section id="linhas-de-estudo-e-temas-centrais">
+      <h2>Linhas de estudo e temas centrais</h2>
+      <p>
+      Nosso foco é construir uma base teórica sólida e, ao mesmo tempo, manter um olhar aplicado para os desafios atuais da área. <br>
+      Entre os temas estudados regularmente estão:
+      </p>
+      <div class="card-list">
+        <div class="card">
+          <h4>Fundamentos de mecânica quântica para computação</h4>
+          <ul>
+            <li>Estados quânticos, superposição & emaranhamento</li>
+            <li>Operadores, medição, mudança de base</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Modelo de computação quântica</h4>
+          <ul>
+            <li>Qubits, portas, circuitos & registradores quânticos</li>
+            <li>Noções de complexidade computacional quântica</li>
+            <li>Algoritmos: Deutsch–Jozsa, Grover, Simon, Shor</li>
+            <li>Algoritmos variacionais (VQE, QAOA) – NISQ</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Ferramentas e frameworks</h4>
+          <ul>
+            <li>Qiskit e simuladores de circuitos quânticos</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Interseções com computação clássica</h4>
+          <ul>
+            <li>Teoria da computação, lógica, estruturas algébricas</li>
+            <li>Criptografia e pós-quântica</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-box" style="margin-top:30px;">
+        Nos encontros, alternamos entre exposições teóricas, discussão de artigos, resolução de exercícios e pequenos experimentos com simuladores e plataformas em nuvem.
+      </div>
+    </section>
+
+    <section id="atividades-e-eventos">
+      <h2>Atividades e eventos</h2>
+      <p>O Quantum BH organiza e participa de diversas atividades com foco em formação e divulgação científica:</p>
+      <ul>
+        <li>
+          <b>Encontros de estudo regulares:</b> reuniões periódicas (online ou presenciais) para estudar capítulos de livros, artigos e tutoriais.
+        </li>
+        <li>
+          <b>Ciclos de mini-cursos e videoaulas:</b> <br>
+          Videoaulas conduzidas pelos professores <b>Júlio Cesar da Silva</b> e <b>André T. Cesário</b>, apresentando de forma acessível conceitos de mecânica quântica e computação quântica.
+        </li>
+        <li>
+          <b>Palestras e apresentações em eventos:</b><br>
+          Em 2025, o grupo apresentou uma palestra sobre Computação Quântica no <b>Inforuso 2025</b>, abordando fundamentos e aplicações emergentes.
+        </li>
+        <li>
+          <b>Divulgação em redes e comunidades:</b> conteúdos introdutórios, materiais de apoio e indicações de bibliografia para estudantes.
+        </li>
+      </ul>
+      <p>
+        <b>Nosso objetivo é ampliar esse calendário com novas palestras, oficinas e parcerias com instituições de ensino e empresas de tecnologia.</b>
+      </p>
+    </section>
+
+    <section id="materiais-didaticos-e-aulas">
+      <h2>Materiais didáticos e aulas</h2>
+      <p class="info-box">
+        Uma das metas do Quantum BH é <span class="highlight">reduzir a barreira de entrada</span> para quem deseja aprender computação quântica vindo da ciência da computação.
+      </p>
+      <ul>
+        <li>
+          <b>Videoaulas introdutórias:</b>
+          <ul>
+            <li>
+              Gravadas com o apoio do Prof. Dr. André T. Cesário;
+            </li>
+            <li>Conceitos básicos de mecânica quântica relevantes para computação;</li>
+            <li>Primeiros modelos de computação quântica e circuitos quânticos.</li>
+          </ul>
+        </li>
+        <li>
+          <b>Guias de estudo:</b>
+          <ul>
+            <li>Roteiros em texto/slides para:</li>
+            <li>Introdução a qubits, portas e circuitos;</li>
+            <li>Uso prático de simuladores e frameworks;</li>
+            <li>Leituras recomendadas (livros, artigos, tutoriais online).</li>
+          </ul>
+        </li>
+        <li>
+          <b>Repositórios de código:</b>
+          <ul>
+            <li>Exemplos em Python/Qiskit (e outros frameworks, conforme o grupo evoluir):</li>
+            <li>Construção de circuitos simples;</li>
+            <li>Execução de algoritmos quânticos básicos em simuladores;</li>
+            <li>Experimentos didáticos para entender superposição, interferência e emaranhamento.</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="info-box">
+        À medida que organizarmos melhor esse material, ele será disponibilizado em repositórios públicos <b>aqui no GitHub</b>, para que qualquer pessoa possa acompanhar o percurso formativo do grupo.
+      </div>
+    </section>
+
+    <section id="como-participar">
+      <h2>Como participar</h2>
+      <ul>
+        <li>
+          <b>Acompanhando os encontros de estudo</b><br>
+          Participe das reuniões regulares (presenciais ou online) e acompanhe leituras e discussões.
+        </li>
+        <li>
+          <b>Contribuindo com materiais</b><br>
+          Sugira textos, artigos, livros e exercícios — ou prepare pequenas apresentações para o grupo.
+        </li>
+        <li>
+          <b>Colaborando com código</b><br>
+          Ajude a construir exemplos em Qiskit e outros frameworks, melhore os repositórios didáticos e proponha projetos práticos.
+        </li>
+        <li>
+          <b>Divulgando o grupo</b><br>
+          Compartilhe nossas atividades nas redes sociais, centros acadêmicos e comunidades de tecnologia.
+        </li>
+      </ul>
+      <div class="info-box">
+        As informações atualizadas sobre datas de reuniões, links de acesso e novidades do grupo serão mantidas aqui no site e, futuramente, em nossas redes sociais.
+      </div>
+    </section>
+
+    <section id="contato-e-parcerias">
+      <h2>Contato e parcerias</h2>
+      <p>
+        Estamos abertos a parcerias com:
+        <ul>
+          <li>Grupos de pesquisa</li>
+          <li>Centros acadêmicos</li>
+          <li>Cursos de graduação e pós-graduação</li>
+          <li>Empresas e comunidades de tecnologia interessadas em computação quântica</li>
+        </ul>
+      </p>
+      <p>Se você deseja:</p>
+      <ul>
+        <li>Convidar o Quantum BH para uma palestra ou oficina;</li>
+        <li>Propor um projeto conjunto;</li>
+        <li>Apoiar a divulgação da computação quântica em sua instituição;</li>
+      </ul>
+      <div class="btn-group">
+        <a class="btn-contact" href="mailto:quantumbelohorizonte@gmail.com" title="Enviar e-mail"><img src="https://img.shields.io/badge/­-Email-EA4335?logo=gmail" alt="E-mail" style="height:20px;vertical-align:middle;"> quantumbelohorizonte@gmail.com</a>
+        <a class="btn-contact" href="https://github.com/quantumbelohorizonte" target="_blank" title="GitHub"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github" alt="GitHub" style="height:20px;vertical-align:middle;"> /quantumbelohorizonte</a>
+        <a class="btn-contact" href="https://github.com/quantumbelohorizonte" target="_blank" title="YouTube"><img src="https://img.shields.io/badge/-YouTube-FF0000?logo=youtube" alt="YouTube" style="height:20px;vertical-align:middle;"> YouTube (em breve)</a>
+      </div>
+      <p style="margin-top:2em">
+        Nosso objetivo é construir uma comunidade colaborativa que ajude a formar a próxima geração de profissionais e pesquisadores em computação quântica, conectando Belo Horizonte ao cenário nacional e internacional da área.
+      </p>
+    </section>
+  </main>
+  <footer>
+    Quantum BH &middot; Grupo de Estudos em Computação Quântica &copy; 2025<br>
+    Faculdade Cotemig · Belo Horizonte – Brasil
+  </footer>
+</body>
+</html>
