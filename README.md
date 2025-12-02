@@ -124,5 +124,5 @@ Entre em contato conosco:
   <a href="https://github.com/quantumbelohorizonte"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github" alt="GitHub"></a>ㅤㅤ
   <a href="https://github.com/quantumbelohorizonte"><img src="https://img.shields.io/badge/-YouTube-FF0000?logo=youtube" alt="YouTube"></a>
 </div>
-
+<br>
 Nosso objetivo é construir uma comunidade colaborativa que ajude a formar a próxima geração de profissionais e pesquisadores em computação quântica, conectando Belo Horizonte ao cenário nacional e internacional da área.
