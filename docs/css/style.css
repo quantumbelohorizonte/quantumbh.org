@@ -25,7 +25,7 @@ html {
 h3, ul, p { font-family: Nunito Sans, sans-serif; }
 ul:first-child { font-family: Poppins, sans-serif; }
 h4 { font-weight: 500; font-style: italic; }
-article { background: url("././source/o-azul.jpg") no-repeat center center / cover; padding: var(--s10) 0; }
+article { background: url("../docs/source/o-azul.jpg") no-repeat center center / cover; padding: var(--s10) 0; }
 a:hover { opacity: .8; }
 
 #evento > img{ max-width: 500px; height: auto; justify-self: start; }
@@ -49,7 +49,7 @@ a:hover { opacity: .8; }
     content: "";
     width: 10px;
     height: 10px;
-    background-image: url("././source/o-amarelo.svg");
+    background-image: url("../docs/source/o-amarelo.svg");
     position: absolute;
     top: 50%;
     left: -24px;
@@ -58,7 +58,7 @@ a:hover { opacity: .8; }
     content: "";
     width: 100%;
     height: 200px;
-    background-image: url("././source/onda.svg");
+    background-image: url("../docs/source/onda.svg");
     background-repeat: no-repeat;
     position: absolute;
     top: -20px;
